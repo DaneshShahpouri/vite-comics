@@ -1,5 +1,5 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import AppNavbar from './components/AppNavabar.vue';
 
 export default {
   data() {
@@ -9,7 +9,7 @@ export default {
   },
 
   components: {
-
+    AppNavbar,
   }
 
 }
@@ -17,7 +17,7 @@ export default {
 
 <template>
   <div>
-
+    <AppNavbar></AppNavbar>
   </div>
 </template>
 
