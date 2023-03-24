@@ -70,7 +70,21 @@ export default {
             </div>
         </div>
 
-        <div class="container-bottom-footer"></div>
+        <div class="container-bottom-footer">
+            <div class="inner-bottom-footer">
+                <button class="btn btn-footer">SING-UP NOW!</button>
+
+                <div class="icon-social-wrapper">
+                    <span>FOLLOW US</span>
+
+                    <img src="/img/footer-facebook.png" alt="">
+                    <img src="/img/footer-periscope.png" alt="">
+                    <img src="/img/footer-pinterest.png" alt="">
+                    <img src="/img/footer-twitter.png" alt="">
+                    <img src="/img/footer-youtube.png" alt="">
+                </div>
+            </div>
+        </div>
 
     </footer>
 </template>
@@ -153,5 +167,44 @@ export default {
 
     height: 100px;
 
+    .inner-bottom-footer {
+        width: 100%;
+        max-width: 1200px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn {
+            padding: .7em 1em;
+            cursor: pointer;
+
+            &-footer {
+                background: transparent;
+                border: 2px solid rgb(2, 130, 249);
+
+                &:hover {
+                    background: #0000002c;
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.189);
+                }
+            }
+        }
+
+
+        .icon-social-wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            gap: 1em;
+
+            span {
+                font-size: 1.1em;
+                font-weight: 700;
+                color: rgb(2, 130, 249);
+                padding-right: .4em;
+            }
+        }
+    }
 }
 </style>
