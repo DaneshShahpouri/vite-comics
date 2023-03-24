@@ -1,5 +1,7 @@
 <script>
 import AppNavbar from './components/AppNavabar.vue';
+import AppMain from './components/AppMain.vue';
+import AppBlueIcon from './components/AppBlueIcon.vue';
 
 export default {
   data() {
@@ -10,6 +12,8 @@ export default {
 
   components: {
     AppNavbar,
+    AppMain,
+    AppBlueIcon,
   }
 
 }
@@ -18,6 +22,8 @@ export default {
 <template>
   <div>
     <AppNavbar></AppNavbar>
+    <AppMain></AppMain>
+    <AppBlueIcon></AppBlueIcon>
   </div>
 </template>
 
