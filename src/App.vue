@@ -2,6 +2,7 @@
 import AppNavbar from './components/AppNavabar.vue';
 import AppMain from './components/AppMain.vue';
 import AppBlueIcon from './components/AppBlueIcon.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   data() {
@@ -14,6 +15,7 @@ export default {
     AppNavbar,
     AppMain,
     AppBlueIcon,
+    AppFooter,
   }
 
 }
@@ -24,6 +26,7 @@ export default {
     <AppNavbar></AppNavbar>
     <AppMain></AppMain>
     <AppBlueIcon></AppBlueIcon>
+    <AppFooter></AppFooter>
   </div>
 </template>
 
