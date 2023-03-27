@@ -34,7 +34,7 @@ export default {
     align-items: flex-start;
     gap: .6em;
 
-    opacity: .8;
+    opacity: .6;
 
     cursor: pointer;
 
@@ -70,6 +70,12 @@ export default {
         background: #000;
 
         transition: all .4s;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .text-wrapper {
