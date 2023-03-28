@@ -230,7 +230,7 @@ export default {
         transition: all .6s;
 
         &-close {
-            max-height: 20px;
+            max-height: 80px;
 
             box-shadow: inset 0px -10px 8px rgba(0, 0, 0, 0.5);
         }
@@ -261,4 +261,5 @@ export default {
 
     }
 
-}</style>
+}
+</style>

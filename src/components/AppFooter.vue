@@ -57,14 +57,14 @@ export default {
             <div class="inner-top-footer">
 
                 <div class="links-container">
-                    <ul v-for="section in FooterLinks">
-                        <li class="main-li">{{ section.name }}</li>
+                    <div v-for="section in FooterLinks">
+                        <span class="main-li">{{ section.name }}</span>
                         <ul>
                             <li v-for="link in section.links">
                                 {{ link }}
                             </li>
                         </ul>
-                    </ul>
+                    </div>
                 </div>
 
             </div>
@@ -97,17 +97,19 @@ export default {
     background-image: url(./img/footer-bg.jpg);
     height: 360px;
     position: relative;
+    overflow: hidden;
 
     &::before {
         content: '';
         background-image: url(./img/dc-logo-bg.png);
         background-position: center;
         background-size: cover;
-        width: 360px;
-        height: 100%;
+        width: 450px;
+        height: 450px;
         position: absolute;
-        right: 20px;
-        top: 0px;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .inner-top-footer {
@@ -118,40 +120,41 @@ export default {
         .links-container {
             height: 100%;
             width: 400px;
+            padding: 1em;
+
             display: flex;
             flex-direction: column;
             align-content: space-around;
             flex-wrap: wrap;
+            gap: 1em;
 
-            ul {
+            div {
                 margin: .5em 0;
 
                 .main-li {
-                    font-weight: 800;
-                    font-size: 1.2em;
-                    margin-bottom: .6em;
+                    font-weight: 700;
+                    font-size: 1.1em;
                     color: white;
                     cursor: auto;
-
-                    &:hover {
-                        font-weight: 800;
-                        font-size: 1.2em;
-                        margin-bottom: .6em;
-                    }
+                    text-transform: uppercase;
                 }
 
-                li {
+                ul {
 
-                    list-style-type: none;
-                    font-weight: 100;
-                    font-size: .9em;
-                    color: rgb(176, 176, 176);
-                    cursor: pointer;
+                    li {
 
-                    &:hover {
-                        color: white;
-                        text-shadow: 1px 1px 2px black;
+                        list-style-type: none;
                         font-weight: 200;
+                        font-size: .8em;
+                        color: rgb(176, 176, 176);
+                        cursor: pointer;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: white;
+                            text-shadow: 1px 1px 2px black;
+                            font-weight: 300;
+                        }
                     }
                 }
             }
